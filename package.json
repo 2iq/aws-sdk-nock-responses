@@ -1,0 +1,22 @@
+{
+  "name": "@2iq/aws-sdk-nock-responses",
+  "description": "Collection of nock responses for aws-sdk.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2iq/aws-sdk-nock-responses.git"
+  },
+  "author": "2iQ Research GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2iq/aws-sdk-nock-responses/issues"
+  },
+  "homepage": "https://github.com/2iq/aws-sdk-nock-responses#readme",
+  "dependencies": {
+    "nock": "^13.0.0"
+  }
+}
