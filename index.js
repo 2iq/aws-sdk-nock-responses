@@ -1,5 +1,5 @@
 const nock = require('nock');
-const ecr = require('./ecr.js');
+const ecr = require('./services/ecr.js');
 
 module.exports = {
   nock: nock,
