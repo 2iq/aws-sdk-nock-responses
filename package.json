@@ -3,6 +3,10 @@
   "description": "Collection of nock responses for aws-sdk.",
   "version": "0.0.1",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "services/"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
