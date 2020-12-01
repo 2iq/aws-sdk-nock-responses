@@ -20,7 +20,6 @@ Add the `@2iq/aws-sdk-nock-responses` to devDependencies:
 
 Use the lib:
 
-
 ```js
 const awsApiMock = require('@2iq/aws-sdk-nock-responses');  // 1️⃣
 
@@ -38,7 +37,7 @@ test('should create ecr repo if not existent', t => {
 ```
 
 1️⃣ `require` the module  
-2️⃣ Add aws api responses in order they are called  
+2️⃣ Add aws api responses  
 3️⃣ Run the code you want to test (code that calls the AWS api)  
 4️⃣ Assert that all calls to AWS api were called
 
