@@ -2,7 +2,7 @@
 
 Collection of nock responses for aws-sdk.
 
-## Quick start
+## Quickstart
 
 Add the `@2iq/aws-sdk-nock-responses` to devDependencies:
 
@@ -18,12 +18,12 @@ Add the `@2iq/aws-sdk-nock-responses` to devDependencies:
 }
 ```
 
-Use the lib:
+Use the lib ([ava] example):
 
 ```js
 const awsApiMock = require('@2iq/aws-sdk-nock-responses');  // 1️⃣
 
-const underTest = require('..');
+const underTest = require('..');  // presumed we are in `test` folder
 
 test('should create ecr repo if not existent', t => {
   awsApiMock.ecr.repoDoesNotExist();  // 2️⃣
@@ -37,15 +37,17 @@ test('should create ecr repo if not existent', t => {
 ```
 
 1️⃣ `require` the module  
-2️⃣ Add aws api responses  
-3️⃣ Run the code you want to test (code that calls the AWS api)  
-4️⃣ Assert that all calls to AWS api were called
+2️⃣ Stub AWS API responses  
+3️⃣ Run the code you want to test (code that calls the AWS API)  
+4️⃣ Assert that all calls to AWS API were called
+
+  [ava]: https://github.com/avajs/ava
 
 ## Disclaimer
 
-This module was created to avoid copy and paste of nock object creation between test-files and projects.
-It only contains responses that are currently required in our projects.
-The customization of response (like setting own region or accountId) is not possible if the change is not needed in our projects.
-Values are hardcoded in that case.
+We created this module to avoid copy and paste of nock objects between test-files and projects.
+As of now, it only contains responses that are required in our projects.
+The customization of response (like setting own region or accountId) is not implemented if we don't need that in our test.
+In that case, the values are hardcoded.
 
-Currently only some ECR responses are present where you can customize the ECR repo name.
+Contributions are welcome!
